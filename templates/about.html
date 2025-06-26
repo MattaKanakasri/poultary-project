@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><About Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #0b3d91;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .about-card {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            line-height: 1.7;
+        }
+
+        .about-card h2 {
+            color: #0b3d91;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about-card h3 {
+            color: #1d4ed8;
+            margin-top: 30px;
+        }
+
+        .about-card p, .about-card ul {
+            font-size: 17px;
+            color: #444;
+        }
+
+        .about-card ul {
+            padding-left: 20px;
+        }
+
+        .about-card ul li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body class="about">
+    <div class="navbar">
+        <span>PoultryDetect</span>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/predict">Prediction Page</a>
+            <a href="/about">About</a>
+        </div>
+    </div>
+
+    <div class="about-card">
+        <h2>About This Project</h2>
+        <p>
+            This AI-based poultry disease detection system uses a deep learning model that classifies images of chicken droppings into four categories: 
+            <strong>Coccidiosis, Newcastle Disease, Salmonella, and Healthy</strong>. The project helps farmers receive instant diagnosis using a simple image upload.
+            It aims to reduce economic losses due to delayed treatment and improve poultry health management across rural and urban areas.
+        </p>
+
+        <h3>🎯 Objective</h3>
+        <p>
+            To build a real-time, accessible AI system that empowers poultry farmers to quickly identify diseases and take timely action without needing expert knowledge.
+        </p>
+
+        <h3>🌟 Key Features</h3>
+        <ul>
+            <li>📸 Image-based detection using AI</li>
+            <li>⚡ Fast, real-time prediction</li>
+            <li>📱 Mobile and desktop-friendly interface</li>
+            <li>💡 User-friendly navigation and design</li>
+            <li>🔄 Easily updatable model backend</li>
+        </ul>
+
+        <h3>📊 Model Details</h3>
+        <p>
+            The AI model is built using <strong>Transfer Learning</strong> (ResNet/VGG) and trained on a curated dataset of poultry waste images. It achieves over <strong>95% accuracy</strong> in predicting disease classes. TensorFlow/Keras and Flask/Streamlit were used to build and deploy the model.
+        </p>
+
+        
+    </div>
+</body>
+</html>
