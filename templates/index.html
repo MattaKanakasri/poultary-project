@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PoultryDetect - Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f9f9ff;
+            color: #333;
+        }
+
+        .header {
+            background: #0b3d91;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            text-decoration: underline;
+        }
+
+        .hero-section {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 38px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            padding: 12px 25px;
+            background: #fff;
+            color: #2575fc;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .stats-section {
+            background: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat-box h2 {
+            font-size: 32px;
+            margin: 0;
+            color: #2575fc;
+        }
+
+        .stat-box p {
+            font-size: 16px;
+        }
+
+        .services-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        /* Disease Service Cards */
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    margin: 10px 0 5px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.green {
+    background-color: #e2f8e9;
+}
+
+.yellow {
+    background-color: #fff9cc;
+}
+
+.red {
+    background-color: #ffe5e5;
+}
+
+.blue {
+    background-color: #e1f5fe;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    background: linear-gradient(to right, #8e9efc, #8ed0fc);
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+.how-steps-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.step-box {
+    background: white;
+    color: #333;
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.step-circle {
+    width: 40px;
+    height: 40px;
+    background: #8e9efc;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+        
+
+
+        .
+
+        .steps-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            font-weight: bold;
+            width: 120px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .arrow {
+            font-size: 32px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="header">
+    <div class="nav-container">
+        <div class="logo">🐔 PoultryDetect</div>
+        <div class="nav-links">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/predict" class="nav-link">Prediction Page</a>
+            
+            <a href="/about" class="nav-link">About</a>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Welcome to Poultry Health Hub</h1>
+        <p>Advanced AI-powered disease detection for poultry health management and prevention.</p>
+        <div class="hero-features">
+            <div class="feature-item">🔬 AI Analysis</div>
+            <div class="feature-item">⚡ Instant Results</div>
+            <div class="feature-item">📱 Mobile Ready</div>
+        </div>
+        <a href="/predict" class="cta-button">🚀 Get Started</a>
+    </div>
+</section>
+
+<!-- Statistics -->
+<section class="stats-section">
+    <div class="stats-container">
+        <div class="stat-box"><h2>95%</h2><p>Accuracy Rate</p></div>
+        <div class="stat-box"><h2>4</h2><p>Disease Types</p></div>
+        <div class="stat-box"><h2>24/7</h2><p>Availability</p></div>
+        <div class="stat-box"><h2>1000+</h2><p>Images Analyzed</p></div>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="services-section">
+    <h2>Disease Detection Services</h2>
+    <div class="services-grid">
+        <div class="service-card green">
+            <img src="https://img.icons8.com/fluency/48/000000/checked.png" alt="Healthy" width="40">
+            <h3>Healthy Detection</h3>
+            <p>Identify normal, healthy chicken droppings with high confidence</p>
+        </div>
+        <div class="service-card yellow">
+            <img src="https://img.icons8.com/fluency/48/000000/error.png" alt="Coccidiosis" width="40">
+            <h3>Coccidiosis</h3>
+            <p>Detect parasitic infections affecting intestinal tract</p>
+        </div>
+        <div class="service-card red">
+            <img src="https://img.icons8.com/fluency/48/000000/virus.png" alt="Newcastle" width="40">
+            <h3>Newcastle Disease</h3>
+            <p>Identify highly contagious viral infections</p>
+        </div>
+        <div class="service-card blue">
+            <img src="https://img.icons8.com/fluency/48/000000/test-tube.png" alt="Salmonella" width="40">
+            <h3>Salmonella</h3>
+            <p>Detect bacterial infections affecting digestive system</p>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="how-it-works-section">
+    <h2>How It Works</h2>
+    <div class="how-steps-box">
+        <div class="step-box">
+            <div class="step-circle">1</div>
+            <h4>Upload Image</h4>
+            <p>Take a photo of chicken droppings and upload it to our system</p>
+        </div>
+        <div class="step-box">
+            <div class="step-circle">2</div>
+            <h4>AI Analysis</h4>
+            <p>Our advanced AI model analyzes the image for disease indicators</p>
+        </div>
+        <div class="step-box">
+            <div class="step-circle">3</div>
+            <h4>Get Results</h4>
+            <p>Receive instant diagnosis with treatment recommendations</p>
+        </div>
+    </div>
+</section>
+<!-- Auto-highlight active link -->
+<script>
+    const links = document.querySelectorAll('.nav-link');
+    const currentPath = window.location.pathname;
+    links.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+        }
+    });
+</script>
+
+</body>
+</html>
